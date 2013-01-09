@@ -24,14 +24,7 @@ $('img:not(.big-image-handled)').live('mouseenter', function () {
                 text += '<nobr>' + 'Klicken für Originalgröße.'.toLocaleString() + '</nobr>';
             }
 
-            info.addClass('big-image-info');
-            info.width(width - 2 * 10); // -20 due to padding
-            info.css({
-                position: 'absolute',
-                left    : offset.left,
-                top     : offset.top
-            });
-            info.html(text);
+            info.addClass('big-image-info').html(text);
 
             $that.wrap('<div class="big-image-handler"/>').after(info).addClass('big-image-handled');
         }

@@ -28,6 +28,7 @@
 .big-image-handler {
   display: inline-block;
   cursor: pointer;
+  position: relative;
 }
 .big-image-info {
   background-color: #32558b;
@@ -41,7 +42,11 @@
   box-shadow: 0px 1px #444;
   color: #fff !important;
   font-size: 0.9em;
-  padding: 10px;
+  left: 0;
+  padding: 10px 0;
+  position: absolute;
   text-align: center;
   text-shadow: 0px 1px 1px #444;
+  top: 0;
+  width: 100%;
 }
