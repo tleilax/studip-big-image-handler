@@ -5,7 +5,7 @@
  * Ermöglicht es, übergroße Bilder, die skaliert eingebunden wurden, per Klick in einem neuen Fenster zu öffnen.
  *
  * @author  Jan-Hendrik Willms <tleilax+studip@gmail.com>
- * @version 1.0
+ * @version 1.1
  **/
 class BigImageHandlerPlugin extends StudIPPlugin implements SystemPlugin
 {
