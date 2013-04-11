@@ -1,9 +1,9 @@
-# Big Image Handler v1.0 by Jan-Hendrik Willms <tleilax+studip@gmail.com>
+# Big Image Handler v1.1.2 by Jan-Hendrik Willms <tleilax+studip@gmail.com>
 pluginname=Big Image Handler
 pluginclassname=BigImageHandlerPlugin
 origin=UOL
-version=1.1.1
+version=1.1.2
 description=Ermöglicht es, übergroße Bilder, die skaliert eingebunden wurden, per Klick in einem neuen Fenster zu öffnen.
 studipMinVersion=2.0
-studipMaxVersion=2.4
+studipMaxVersion=2.5
 homepage=https://github.com/tleilax/studip-big-image-handler

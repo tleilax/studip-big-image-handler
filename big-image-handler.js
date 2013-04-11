@@ -8,7 +8,9 @@ $('img:not(.big-image-handled)').live('mouseenter', function () {
         height  = parseInt($that.height(), 10),
         img;
 
-    if (width < 200 || ($parent.is('a[href]') && $parent.attr('href') !== src)) {
+    if (width < 200
+        || $that.is('[class^=avatar][class^=user]')
+        || ($parent.is('a[href]') && $parent.attr('href') !== src)) {
         return;
     }
 
