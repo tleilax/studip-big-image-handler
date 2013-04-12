@@ -9,7 +9,7 @@ $('img:not(.big-image-handled)').live('mouseenter', function () {
         img;
 
     if (width < 200
-        || ($that.is('[class*=avatar][class*=user]')
+        || $that.is('[class*=avatar][class*=user]')
         || ($parent.is('a[href]') && $parent.attr('href') !== src)) {
         return;
     }
