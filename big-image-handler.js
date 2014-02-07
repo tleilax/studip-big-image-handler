@@ -45,7 +45,7 @@ $('.big-image-handler').live('mouseenter', function () {
     event.preventDefault();
     
     // Open as full screen lightbox
-    $('body').append('<div class="image_overlay"><img style="max-height: ' + ($(document).height() - 20) + 'px; max-width: ' + ($(document).width() - 20) + 'px" src="' + src + '" /></div>');
+    $('body').append('<div class="image_overlay"><img class="big-image-handled" style="max-height: ' + ($(document).height() - 20) + 'px; max-width: ' + ($(document).width() - 20) + 'px" src="' + src + '" /></div>');
     $('.image_overlay').click(function() {
         $(this).remove();
     });
