@@ -2,8 +2,8 @@
 pluginname=Big Image Handler
 pluginclassname=BigImageHandlerPlugin
 origin=UOL
-version=1.1.4
+version=1.2
 description=Ermöglicht es, übergroße Bilder, die skaliert eingebunden wurden, per Klick in einem neuen Fenster zu öffnen.
 studipMinVersion=2.0
-studipMaxVersion=2.5
+studipMaxVersion=3.0
 homepage=https://github.com/tleilax/studip-big-image-handler

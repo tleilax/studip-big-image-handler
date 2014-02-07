@@ -21,7 +21,7 @@ $('img:not(.big-image-handled)').live('mouseenter', function () {
                 info   = $('<div/>').hide(),
                 text   = 'Dieses Bild wird verkleinert dargestellt.'.toLocaleString() + ' ';
             if (width >= 500) {
-                text += '<nobr>' + 'Klicken Sie auf das Bild, um es in Originalgröße in einem neuen Fenster zu öffnen.'.toLocaleString() + '</nobr>';
+                text += '<nobr>' + 'Klicken Sie auf das Bild, um es in Originalgröße zu öffnen.'.toLocaleString() + '</nobr>';
             } else if (width >= 300) {
                 text += '<nobr>' + 'Klicken für Originalgröße.'.toLocaleString() + '</nobr>';
             }
@@ -39,16 +39,14 @@ $('.big-image-handler').live('mouseenter', function () {
 }).live('mouseleave', function () {
     $('div', this).stop(true, true).hide('slide', {direction: 'up'});
 }).live('click', function (event) {
-    var src = $('img', this).attr('src');
-    //window.open(src);
-    
-    event.preventDefault();
-    
     // Open as full screen lightbox
-    $('body').append('<div class="image_overlay"><img class="big-image-handled" style="max-height: ' + ($(document).height() - 20) + 'px; max-width: ' + ($(document).width() - 20) + 'px" src="' + src + '" /></div>');
-    $('.image_overlay').click(function() {
+    var src = $('img', this).attr('src'),
+        img = $('<img>').addClass('big-image-handled').attr('src', src);
+    $('<div class="image_overlay">').append(img).appendTo('body').click(function () {
         $(this).remove();
     });
+
+    event.preventDefault();
 });
 
 }(jQuery));
