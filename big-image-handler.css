@@ -57,7 +57,7 @@
   top: 0;
   width: 100%;
 }
-.image_overlay {
+.big-image-overlay {
   position: fixed;
   background-color: rgba(0,0,0,0.7);
   top: 0;
@@ -69,7 +69,7 @@
   color: white;
   padding: 10px;
 }
-.image_overlay img {
+.big-image-overlay img {
   box-shadow: 0 0 50px #888;
   max-width: 100%;
   max-height: 100%;

@@ -42,7 +42,7 @@ $('.big-image-handler').live('mouseenter', function () {
     // Open as full screen lightbox
     var src = $('img', this).attr('src'),
         img = $('<img>').addClass('big-image-handled').attr('src', src);
-    $('<div class="image_overlay">').append(img).appendTo('body').click(function () {
+    $('<div class="big-image-overlay">').append(img).appendTo('body').click(function () {
         $(this).remove();
     });
 
