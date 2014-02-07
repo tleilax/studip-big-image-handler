@@ -40,9 +40,15 @@ $('.big-image-handler').live('mouseenter', function () {
     $('div', this).stop(true, true).hide('slide', {direction: 'up'});
 }).live('click', function (event) {
     var src = $('img', this).attr('src');
-    window.open(src);
+    //window.open(src);
     
     event.preventDefault();
+    
+    // Open as full screen lightbox
+    $('body').append('<div class="image_overlay"><img style="max-height: ' + ($(document).height() - 20) + 'px; max-width: ' + ($(document).width() - 20) + 'px" src="' + src + '" /></div>');
+    $('.image_overlay').click(function() {
+        $(this).remove();
+    });
 });
 
 }(jQuery));
