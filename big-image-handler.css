@@ -81,3 +81,11 @@
   -o-transform: translate(0,-50%);
   transform: translate(0,-50%);
 }
+.big-image-close {
+  background-image: url("http://127.0.0.1/~tleilax/studip/trunk/assets/images//icons/16/black/decline.png");
+  background-image: -webkit-image-set(url("http://127.0.0.1/~tleilax/studip/trunk/assets/images//icons/16/black/decline.png") 1x,url("http://127.0.0.1/~tleilax/studip/trunk/assets/images//icons/32/black/decline.png") 2x);
+  cursor: pointer;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+}
