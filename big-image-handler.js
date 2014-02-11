@@ -9,7 +9,11 @@ $(document).on('mouseenter', 'img:not(.big-image-handled)', function () {
         img;
 
     if ($that.is('[class*=avatar][class*=user]')
-        || ($parent.is('a[href]') && $parent.attr('href') !== src)) {
+        || ($parent.is('a[href]') && $parent.attr('href') !== src)
+        || $that.attr('src').match(STUDIP.ASSETS_URL + 'images/icons/'))
+    {
+        // Prevent any further handling
+        $(this).addClass('big-image-handled'); 
         return;
     }
 
