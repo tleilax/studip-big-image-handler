@@ -25,13 +25,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.hover_box .hover_symbols {
-  display: none;
-}
-.hover_box:hover .hover_symbols {
-  display: inline;
-  padding-left: 5px;
-}
 .big-image-handler {
   display: inline-block;
   cursor: pointer;
@@ -73,13 +66,14 @@
   box-shadow: 0 0 50px #888;
   max-width: 100%;
   max-height: 100%;
-  position: relative;
+  position: absolute;
+  left: 50%;
   top: 50%;
-  -webkit-transform: translate(0,-50%);
-  -moz-transform: translate(0,-50%);
-  -ms-transform: translate(0,-50%);
-  -o-transform: translate(0,-50%);
-  transform: translate(0,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 .big-image-close {
   background-image: url("http://127.0.0.1/~tleilax/studip/trunk/assets/images//icons/16/black/decline.png");

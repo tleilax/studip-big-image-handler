@@ -27,7 +27,6 @@
     text-align: center;
     z-index: 99999;
     color: white;
-    padding: 10px;
 
     img {
         box-shadow: 0 0 50px #888;
@@ -35,9 +34,10 @@
         max-height: 100%;
 
         // Vertically align: http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-        position: relative;
+        position: absolute;
+        left: 50%;
         top: 50%;
-        .translate(0, -50%);
+        .translate(-50%, -50%);
     }
 }
 .big-image-close {
