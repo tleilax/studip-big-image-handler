@@ -19,7 +19,7 @@ $(document).on('mouseenter', 'img:not(.big-image-handled)', function () {
 
     img = new Image();
     img.onload = function () {
-        if (img.width > width || img.height > height) {
+        if (img.width > width * window.devicePixelRatio || img.height > height * window.devicePixelRatio) {
             var offset = $that.offset(),
                 info   = $('<div/>').hide(),
                 text   = 'Dieses Bild wird verkleinert dargestellt.'.toLocaleString() + ' ';
