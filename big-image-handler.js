@@ -1,6 +1,6 @@
 (function ($) {
 
-$(document).on('mouseenter', 'img:not(.big-image-handled)', function () {
+$(document).on('mouseenter', '#layout_content img:not(.big-image-handled)', function () {
     var $that   = $(this),
         $parent = $that.parent(),
         src     = $that.attr('src'),
