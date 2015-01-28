@@ -10,7 +10,8 @@ $(document).on('mouseenter', '#layout_content img:not(.big-image-handled)', func
 
     if ($that.is('[class*=avatar][class*=user]')
         || ($parent.is('a[href]') && $parent.attr('href') !== src)
-        || $that.attr('src').match(STUDIP.ASSETS_URL + 'images/icons/'))
+        || src.match(STUDIP.ASSETS_URL + 'images/icons/')
+        || src.match(/\.svg/))
     {
         // Prevent any further handling
         $(this).addClass('big-image-handled'); 
@@ -24,9 +25,9 @@ $(document).on('mouseenter', '#layout_content img:not(.big-image-handled)', func
                 info   = $('<div/>').hide(),
                 text   = 'Dieses Bild wird verkleinert dargestellt.'.toLocaleString() + ' ';
             if (width >= 500) {
-                text += '<nobr>' + 'Klicken Sie auf das Bild, um es in Originalgröße zu öffnen.'.toLocaleString() + '</nobr>';
+                text += '<nobr>' + 'Klicken Sie auf das Bild, um es in OriginalgrÃ¶ÃŸe zu Ã¶ffnen.'.toLocaleString() + '</nobr>';
             } else if (width >= 300) {
-                text += '<nobr>' + 'Klicken für Originalgröße.'.toLocaleString() + '</nobr>';
+                text += '<nobr>' + 'Klicken fÃ¼r OriginalgrÃ¶ÃŸe.'.toLocaleString() + '</nobr>';
             } else if (width < 100) {
                 text = $('<img>').attr('title', text).attr('src', STUDIP.ASSETS_URL + 'images/icons/16/white/visibility-invisible.png');
             }
