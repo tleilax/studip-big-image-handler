@@ -1,10 +1,13 @@
 # Big Image Handler for Stud.IP
 
+*NOTE*: This plugin is obsolete as of Stud.IP 3.4 since a similar mechanism has been built into the core.
+
+
 This plugin handles large images which were embedded and downscaled (`<img src="..." width="smaller than original">`) by enabling the user to open the image in it's original size by a simple click.
 
 ## Requirements
 
-* Stud.IP >= 2.0
+* Stud.IP >= 2.0 and < 3.4
 
 ## Installation
 
